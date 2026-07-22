@@ -1,67 +1,132 @@
 {{-- Footer Component --}}
-<footer class="bg-[#1A3A2A] text-white pt-16 px-6">
+<footer class="bg-[#173A2A] text-white">
 
-    {{-- Footer Grid --}}
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-12 max-w-[1262px] mx-auto pb-12 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-14">
 
-        {{-- Brand --}}
-        <div class="max-w-xs lg:col-span-1">
-            <div class="font-['Outfit'] text-[22px] font-bold mb-3 flex items-center gap-2.5">
-                <div class="flex items-center gap-1.5 shrink-0">
-                    <img src="{{ asset('storage/Picture/Logo%20Gunung%20Kidul.png') }}" alt="Logo Gunungkidul" class="h-8 w-auto object-contain">
-                    <img src="{{ asset('storage/Picture/Logo%20KKN.png') }}" alt="Logo KKN 64 UNS" class="h-8 w-auto object-contain rounded">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 border-b border-white/10 pb-12">
+
+            {{-- Logo & Deskripsi --}}
+            <div>
+
+                <a href="/" class="flex items-center gap-4 mb-5">
+
+                    <img
+                        src="{{ asset('storage/logo/logo-karanganyar.png') }}"
+                        alt="Logo Karanganyar"
+                        class="w-14 h-14 object-contain">
+
+                    <div>
+
+                        <h3 class="font-['Outfit'] text-2xl font-bold leading-none">
+                            Desa Ngadirejo
+                        </h3>
+
+                        <p class="text-sm text-white/60 mt-1">
+                            Kecamatan Mojogedang
+                        </p>
+
+                        <p class="text-sm text-white/60">
+                            Kabupaten Karanganyar
+                        </p>
+
+                    </div>
+
+                </a>
+
+                <p class="text-sm leading-7 text-white/70">
+
+                    Website resmi Pemerintah Desa Ngadirejo sebagai media
+                    informasi pelayanan publik, potensi desa, wisata,
+                    UMKM, serta berbagai kegiatan masyarakat.
+
+                </p>
+
+            </div>
+
+            {{-- Navigasi --}}
+            <div>
+
+                <h4 class="text-sm uppercase tracking-widest text-[#E8A84C] font-semibold mb-5">
+                    Navigasi
+                </h4>
+
+                <ul class="space-y-3 text-sm">
+
+                    <li><a href="/" class="hover:text-[#E8A84C] duration-200">Beranda</a></li>
+
+                    <li><a href="/profil" class="hover:text-[#E8A84C] duration-200">Profil Desa</a></li>
+
+                    <li><a href="/perangkat-desa" class="hover:text-[#E8A84C] duration-200">Perangkat Desa</a></li>
+
+                    <li><a href="/lembaga-desa" class="hover:text-[#E8A84C] duration-200">Lembaga Desa</a></li>
+
+                </ul>
+
+            </div>
+
+            {{-- Informasi --}}
+            <div>
+
+                <h4 class="text-sm uppercase tracking-widest text-[#E8A84C] font-semibold mb-5">
+                    Informasi
+                </h4>
+
+                <ul class="space-y-3 text-sm">
+
+                    <li><a href="/wisata" class="hover:text-[#E8A84C] duration-200">Wisata</a></li>
+
+                    <li><a href="/umkm" class="hover:text-[#E8A84C] duration-200">UMKM</a></li>
+
+                    <li><a href="/ngadirejo-membaca" class="hover:text-[#E8A84C] duration-200">Ngadirejo Membaca</a></li>
+
+                    <li><a href="/lokasi" class="hover:text-[#E8A84C] duration-200">Lokasi</a></li>
+
+                </ul>
+
+            </div>
+
+            {{-- Kontak --}}
+            <div>
+
+                <h4 class="text-sm uppercase tracking-widest text-[#E8A84C] font-semibold mb-5">
+                    Kontak
+                </h4>
+
+                <div class="space-y-4 text-sm text-white/70">
+
+                    <p>
+                        📍 Desa Ngadirejo<br>
+                        Kecamatan Mojogedang<br>
+                        Kabupaten Karanganyar
+                    </p>
+
+                    <p>
+                        ✉ desa.ngadirejo@example.com
+                    </p>
+
+                    <p>
+                        ☎ (0271) xxxx xxx
+                    </p>
+
                 </div>
-                Desa Melikan
+
             </div>
-            <p class="text-sm leading-relaxed text-white/55 mb-5">
-                Website resmi profil Kalurahan Melikan, Kapanewon Rongkop, Kabupaten Gunungkidul, D.I. Yogyakarta.
-                Menampilkan informasi, wisata, UMKM, dan program kerja untuk kemajuan desa.
+
+        </div>
+
+        {{-- Bottom --}}
+        <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+
+            <p class="text-sm text-white/50">
+                © {{ date('Y') }} Pemerintah Desa Ngadirejo. Seluruh Hak Cipta Dilindungi.
             </p>
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/[0.08] rounded-full border border-white/10 text-xs text-white/60 font-medium">
-                Dibuat oleh Tim KKN 64 UNS 2026
-            </div>
+
+            <p class="text-sm text-white/50">
+                Website Desa Ngadirejo - Mojogedang - Karanganyar
+            </p>
+
         </div>
 
-        {{-- Navigasi --}}
-        <div>
-            <h4 class="text-[13px] font-semibold uppercase tracking-wider text-white/40 mb-5">Navigasi</h4>
-            <ul class="list-none p-0 m-0 space-y-3">
-                <li><a href="/" class="text-sm text-white/65 no-underline transition-colors duration-200 hover:text-[#E8A84C]">Beranda</a></li>
-                <li><a href="/profil" class="text-sm text-white/65 no-underline transition-colors duration-200 hover:text-[#E8A84C]">Profil Desa</a></li>
-                <li><a href="/wisata" class="text-sm text-white/65 no-underline transition-colors duration-200 hover:text-[#E8A84C]">Wisata</a></li>
-                <li><a href="/umkm" class="text-sm text-white/65 no-underline transition-colors duration-200 hover:text-[#E8A84C]">UMKM</a></li>
-            </ul>
-        </div>
-
-        {{-- Program --}}
-        <div>
-            <h4 class="text-[13px] font-semibold uppercase tracking-wider text-white/40 mb-5">Program</h4>
-            <ul class="list-none p-0 m-0 space-y-3">
-                <li><a href="/melikan-belajar" class="text-sm text-white/65 no-underline transition-colors duration-200 hover:text-[#E8A84C]">Melikan Belajar</a></li>
-                <li><a href="/about" class="text-sm text-white/65 no-underline transition-colors duration-200 hover:text-[#E8A84C]">Tentang</a></li>
-                <li><a href="/lokasi" class="text-sm text-white/65 no-underline transition-colors duration-200 hover:text-[#E8A84C]">Lokasi</a></li>
-            </ul>
-        </div>
-
-
-        {{-- KKN --}}
-        <div>
-            <h4 class="text-[13px] font-semibold uppercase tracking-wider text-white/40 mb-5">KKN 64 UNS</h4>
-            <ul class="list-none p-0 m-0 space-y-3">
-                <li><a href="https://uns.ac.id" target="_blank" class="text-sm text-white/65 no-underline transition-colors duration-200 hover:text-[#E8A84C]">Universitas Sebelas Maret</a></li>
-                <li><a href="#" class="text-sm text-white/65 no-underline transition-colors duration-200 hover:text-[#E8A84C]">Tim KKN 64</a></li>
-                <li><a href="#" class="text-sm text-white/65 no-underline transition-colors duration-200 hover:text-[#E8A84C]">Dokumentasi</a></li>
-            </ul>
-        </div>
     </div>
 
-    {{-- Bottom Bar --}}
-    <div class="max-w-[1262px] mx-auto py-6 flex flex-col md:flex-row items-center justify-between gap-3">
-        <span class="text-[13px] text-white/40">
-            &copy; 2026 Desa Melikan. Dikembangkan oleh <strong class="text-[#E8A84C] font-semibold">KKN 64 UNS 2026</strong>
-        </span>
-        <span class="text-xs text-white/40">
-            Universitas Sebelas Maret — Surakarta
-        </span>
-    </div>
 </footer>

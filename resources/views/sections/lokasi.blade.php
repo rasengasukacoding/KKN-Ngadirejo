@@ -4,20 +4,20 @@
 
         <x-section-header
             eyebrow="Lokasi"
-            title="Temukan<br>Kalurahan Melikan"
-            description="Kalurahan Melikan berada di Kapanewon Rongkop, Kabupaten Gunungkidul, D.I. Yogyakarta. Akses mudah dari perkotaan Wonosari maupun Pracimantoro."
+            title="Temukan<br>Desa Ngadirejo"
+            description="Desa Ngadirejo berada di Kecamatan Mojogedang, Kabupaten Karanganyar, Jawa Tengah. Akses mudah dari perkotaan Karanganyar maupun Solo."
         />
 
         {{-- Map & Info --}}
         <div class="reveal border border-[#E8E5DE] overflow-hidden rounded-2xl shadow-sm">
-            {{-- Google Maps Embed (Updated for Rongkop Gunungkidul) --}}
+            {{-- Google Maps Embed --}}
             <iframe
-                src="https://maps.google.com/maps?q=Melikan,Rongkop,Gunungkidul,Yogyakarta&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=Ngadirejo,Mojogedang,Karanganyar,Jawa+Tengah&t=&z=14&ie=UTF8&iwloc=&output=embed"
                 class="w-full h-[450px] border-0 block"
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
-                title="Lokasi Desa Melikan Rongkop Gunungkidul"
+                title="Lokasi Desa Ngadirejo Mojogedang Karanganyar"
             ></iframe>
 
             {{-- Info Bar --}}
@@ -30,7 +30,7 @@
                     </div>
                     <div>
                         <div class="text-xs font-semibold uppercase tracking-wide text-[#6E6E73] mb-1">Alamat</div>
-                        <div class="text-[15px] font-medium text-[#1D1D1F]">Kalurahan Melikan, Kapanewon Rongkop, Kab. Gunungkidul, D.I. Yogyakarta</div>
+                        <div class="text-[15px] font-medium text-[#1D1D1F]">Desa Ngadirejo, Kecamatan Mojogedang, Kab. Karanganyar, Jawa Tengah</div>
                     </div>
                 </div>
 
@@ -41,7 +41,7 @@
                     </div>
                     <div>
                         <div class="text-xs font-semibold uppercase tracking-wide text-[#6E6E73] mb-1">Kode Pos</div>
-                        <div class="text-[15px] font-medium text-[#1D1D1F]">55884</div>
+                        <div class="text-[15px] font-medium text-[#1D1D1F]">57752</div>
                     </div>
                 </div>
 
@@ -51,8 +51,8 @@
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                     </div>
                     <div>
-                        <div class="text-xs font-semibold uppercase tracking-wide text-[#6E6E73] mb-1">Kontak Kalurahan</div>
-                        <div class="text-[15px] font-medium text-[#1D1D1F]">Pemerintah Kalurahan Melikan</div>
+                        <div class="text-xs font-semibold uppercase tracking-wide text-[#6E6E73] mb-1">Kontak Desa</div>
+                        <div class="text-[15px] font-medium text-[#1D1D1F]">Pemerintah Desa Ngadirejo</div>
                     </div>
                 </div>
             </div>

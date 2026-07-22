@@ -4,7 +4,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 border border-[#E8E5DE]">
 
             {{-- Image --}}
-            <img src="{{ asset('images/umkm-products.png') }}" alt="Produk UMKM Desa Melikan"
+            <img src="{{ asset('images/umkm-products.png') }}" alt="Produk UMKM Desa Ngadirejo"
                  class="w-full h-full object-cover reveal">
 
             {{-- Content --}}
@@ -13,16 +13,16 @@
                     UMKM & Produk Unggulan
                 </span>
                 <h2 class="font-['Outfit'] text-3xl md:text-[40px] font-semibold leading-tight tracking-tight mb-5">
-                    Karya & Produk<br>Asli Melikan
+                    Produk & Karya <br>Asli Ngadirejo
                 </h2>
                 <p class="text-[17px] leading-relaxed text-[#6E6E73] mb-8">
-                    Desa Melikan memiliki beragam produk UMKM berkualitas yang mencerminkan
-                    kreativitas dan kearifan lokal masyarakat desa.
+                    Desa Ngadirejo memiliki beragam produk UMKM berkualitas yang mencerminkan
+                    kearifan lokal dan pemasukan masyarakat desa.
                 </p>
 
                 {{-- Feature List --}}
                 <ul class="list-none p-0 m-0 mb-8 space-y-2.5">
-                    @foreach(['Kerajinan anyaman bambu khas Rongkop', 'Olahan tradisional tiwul & gatot instan', 'Camilan lokal keripik tempe sagu', 'Seni pahat & kerajinan batu kapur putih'] as $item)
+                    @foreach(['Kerajinan kayu & anyaman bambu khas Mojogedang', 'Olahan tradisional pangan lokal', 'Camilan lokal keripik tradisional', 'Seni ukir kayu & dekorasi'] as $item)
                     <li class="flex items-start gap-3 text-[15px] text-[#333336]">
                         <span class="shrink-0 w-[22px] h-[22px] bg-[#E8F0EF] rounded-full flex items-center justify-center mt-0.5">
                             <svg class="w-3 h-3 text-[#2D5F5D]" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5L2.5 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>

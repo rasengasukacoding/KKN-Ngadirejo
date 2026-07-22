@@ -4,15 +4,15 @@
 
         <x-section-header
             eyebrow="Tentang Kami"
-            title="Mengapa<br>Desa Melikan?"
-            description="Desa Melikan bukan sekadar tempat tinggal, melainkan sebuah komunitas yang hidup dengan nilai-nilai luhur dan semangat untuk terus berkembang."
+            title="Mengapa<br>Desa Ngadirejo?"
+            description="Desa Ngadirejo bukan sekadar tempat tinggal, melainkan sebuah komunitas yang hidup dengan nilai-nilai luhur dan semangat untuk terus berkembang."
         />
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-8 mt-14">
             <x-value-card
                 icon="🤝"
                 title="Gotong Royong"
-                description="Semangat kebersamaan dan saling membantu yang menjadi fondasi utama kehidupan bermasyarakat di Desa Melikan."
+                description="Semangat kebersamaan dan saling membantu yang menjadi fondasi utama kehidupan bermasyarakat di Desa Ngadirejo."
                 delay="1"
             />
 

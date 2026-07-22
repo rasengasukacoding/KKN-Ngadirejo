@@ -1,18 +1,36 @@
 {{-- Navbar Component --}}
 <nav class="nav-glass fixed top-0 left-0 right-0 z-50 border-b border-black/5 transition-all duration-300" id="navbar">
-    <div class="max-w-[1262px] mx-auto flex items-center justify-between px-6 h-[52px]">
+    <div class="max-w-[1262px] mx-auto flex items-center justify-between px-6 h-[72px]">
+
+        <a href="/" class="flex items-center gap-4 no-underline shrink-0">
 
         {{-- Logo --}}
-        <a href="/" class="flex items-center gap-2.5 no-underline text-[#1A3A2A] font-['Outfit'] font-bold text-xl">
-            <div class="flex items-center gap-1.5 shrink-0">
-                <img src="{{ asset('storage/Picture/Logo%20Gunung%20Kidul.png') }}" alt="Logo Gunungkidul" class="h-[34px] w-auto object-contain">
-                <img src="{{ asset('storage/Picture/Logo%20KKN.png') }}" alt="Logo KKN 64 UNS" class="h-[34px] w-auto object-contain rounded">
-            </div>
-            Desa Melikan
-        </a>
+        <img
+            src="{{ asset('storage/logo/logo-karanganyar.png') }}"
+            alt="Logo Karanganyar"
+            class="h-14 w-14 object-contain">
+
+        {{-- Tulisan --}}
+        <div class="flex flex-col leading-tight">
+
+            <span class="text-[20px] font-bold text-[#1A3A2A]">
+                Desa Ngadirejo
+            </span>
+
+            <span class="text-[11px] text-gray-600">
+                Kecamatan Mojogedang
+            </span>
+
+            <span class="text-[11px] text-gray-600">
+                Kabupaten Karanganyar
+            </span>
+
+        </div>
+
+    </a>
 
         {{-- Desktop Nav Links --}}
-        <ul class="hidden md:flex items-center gap-1 list-none m-0 p-0" id="nav-links">
+        <ul class="hidden md:flex items-center gap-3 list-none m-0 p-0" id="nav-links">
             <li>
                 <a href="/" class="nav-link inline-flex items-center h-11 px-3.5 text-sm font-medium no-underline rounded-lg transition-all duration-200 hover:text-[#2D5F5D] hover:bg-[#2D5F5D]/5 {{ request()->is('/') ? 'text-[#2D5F5D] bg-[#2D5F5D]/5 font-semibold' : 'text-gray-600' }}">
                     Beranda
@@ -24,6 +42,20 @@
                 </a>
             </li>
             <li>
+                <a href="/perangkat-desa"
+                    class="nav-link inline-flex items-center h-11 px-3.5 text-sm font-medium no-underline rounded-lg transition-all duration-200 hover:text-[#2D5F5D] hover:bg-[#2D5F5D]/5 {{ request()->is('perangkat-desa*') ? 'text-[#2D5F5D] bg-[#2D5F5D]/5 font-semibold' : 'text-gray-600' }}">
+                    Perangkat Desa
+                </a>
+            </li>
+
+            <li>
+                <a href="/lembaga-desa"
+                    class="nav-link inline-flex items-center h-11 px-3.5 text-sm font-medium no-underline rounded-lg transition-all duration-200 hover:text-[#2D5F5D] hover:bg-[#2D5F5D]/5 {{ request()->is('lembaga-desa*') ? 'text-[#2D5F5D] bg-[#2D5F5D]/5 font-semibold' : 'text-gray-600' }}">
+                    Lembaga Desa
+                </a>
+            </li>
+
+            <li>
                 <a href="/wisata" class="nav-link inline-flex items-center h-11 px-3.5 text-sm font-medium no-underline rounded-lg transition-all duration-200 hover:text-[#2D5F5D] hover:bg-[#2D5F5D]/5 {{ request()->is('wisata') ? 'text-[#2D5F5D] bg-[#2D5F5D]/5 font-semibold' : 'text-gray-600' }}">
                     Wisata
                 </a>
@@ -34,8 +66,8 @@
                 </a>
             </li>
             <li>
-                <a href="/melikan-belajar" class="nav-link inline-flex items-center h-11 px-3.5 text-sm font-medium no-underline rounded-lg transition-all duration-200 hover:text-[#2D5F5D] hover:bg-[#2D5F5D]/5 {{ request()->is('melikan-belajar') ? 'text-[#2D5F5D] bg-[#2D5F5D]/5 font-semibold' : 'text-gray-600' }}">
-                    Melikan Belajar
+                <a href="/kegiatan-berita" class="nav-link inline-flex items-center h-11 px-3.5 text-sm font-medium no-underline rounded-lg transition-all duration-200 hover:text-[#2D5F5D] hover:bg-[#2D5F5D]/5 {{ request()->is('ngadirejo-membaca') ? 'text-[#2D5F5D] bg-[#2D5F5D]/5 font-semibold' : 'text-gray-600' }}">
+                    Kegiatan & Berita
                 </a>
             </li>
             <li>
@@ -50,11 +82,6 @@
             </li>
         </ul>
 
-        {{-- CTA Button --}}
-        <a href="/melikan-belajar" class="hidden md:inline-flex items-center h-9 px-[18px] text-sm font-medium text-white bg-gradient-to-br from-[#2D5F5D] to-[#1A4B5C] rounded-full no-underline transition-all duration-200 shadow-[0_2px_8px_rgba(26,75,92,0.2)] hover:-translate-y-0.5 hover:shadow-[0_4px_16px_rgba(26,75,92,0.3)]">
-            Jelajahi
-        </a>
-
         {{-- Mobile Toggle --}}
         <button class="md:hidden bg-transparent border-none cursor-pointer p-2 text-[#1D1D1F]" id="nav-toggle" aria-label="Toggle navigation">
             <span class="block w-[22px] h-0.5 bg-current my-[5px] rounded-sm transition-all duration-300"></span>
@@ -66,13 +93,51 @@
 
 {{-- Mobile Drawer --}}
 <div class="hidden fixed top-[52px] left-0 right-0 bottom-0 bg-white/[0.98] backdrop-blur-xl z-[49] p-6 opacity-0 -translate-y-2.5 transition-all duration-300" id="nav-drawer">
-    <a href="/" class="flex items-center py-4 text-lg font-medium no-underline border-b border-[#E8E5DE] transition-colors duration-200 {{ request()->is('/') ? 'text-[#2D5F5D] font-semibold' : 'text-[#1D1D1F] hover:text-[#2D5F5D]' }}">Beranda</a>
-    <a href="/profil" class="flex items-center py-4 text-lg font-medium no-underline border-b border-[#E8E5DE] transition-colors duration-200 {{ request()->is('profil') ? 'text-[#2D5F5D] font-semibold' : 'text-[#1D1D1F] hover:text-[#2D5F5D]' }}">Profil Desa</a>
-    <a href="/wisata" class="flex items-center py-4 text-lg font-medium no-underline border-b border-[#E8E5DE] transition-colors duration-200 {{ request()->is('wisata') ? 'text-[#2D5F5D] font-semibold' : 'text-[#1D1D1F] hover:text-[#2D5F5D]' }}">Wisata</a>
-    <a href="/umkm" class="flex items-center py-4 text-lg font-medium no-underline border-b border-[#E8E5DE] transition-colors duration-200 {{ request()->is('umkm') ? 'text-[#2D5F5D] font-semibold' : 'text-[#1D1D1F] hover:text-[#2D5F5D]' }}">UMKM & Produk</a>
-    <a href="/melikan-belajar" class="flex items-center py-4 text-lg font-medium no-underline border-b border-[#E8E5DE] transition-colors duration-200 {{ request()->is('melikan-belajar') ? 'text-[#2D5F5D] font-semibold' : 'text-[#1D1D1F] hover:text-[#2D5F5D]' }}">Melikan Belajar</a>
-    <a href="/about" class="flex items-center py-4 text-lg font-medium no-underline border-b border-[#E8E5DE] transition-colors duration-200 {{ request()->is('about') ? 'text-[#2D5F5D] font-semibold' : 'text-[#1D1D1F] hover:text-[#2D5F5D]' }}">Tentang</a>
-    <a href="/lokasi" class="flex items-center py-4 text-lg font-medium no-underline border-b border-[#E8E5DE] transition-colors duration-200 {{ request()->is('lokasi') ? 'text-[#2D5F5D] font-semibold' : 'text-[#1D1D1F] hover:text-[#2D5F5D]' }}">Lokasi</a>
+    <a href="/"
+        class="flex items-center py-4 text-lg font-medium no-underline border-b border-[#E8E5DE] transition-colors duration-200 {{ request()->is('/') ? 'text-[#2D5F5D] font-semibold' : 'text-[#1D1D1F] hover:text-[#2D5F5D]' }}">
+        Beranda
+    </a>
+
+    <a href="/profil"
+        class="flex items-center py-4 text-lg font-medium no-underline border-b border-[#E8E5DE] transition-colors duration-200 {{ request()->is('profil') ? 'text-[#2D5F5D] font-semibold' : 'text-[#1D1D1F] hover:text-[#2D5F5D]' }}">
+        Profil Desa
+    </a>
+
+    <a href="/perangkat-desa"
+        class="flex items-center py-4 text-lg font-medium no-underline border-b border-[#E8E5DE] transition-colors duration-200 {{ request()->is('perangkat-desa*') ? 'text-[#2D5F5D] font-semibold' : 'text-[#1D1D1F] hover:text-[#2D5F5D]' }}">
+        Perangkat Desa
+    </a>
+
+    <a href="/lembaga-desa"
+        class="flex items-center py-4 text-lg font-medium no-underline border-b border-[#E8E5DE] transition-colors duration-200 {{ request()->is('lembaga-desa*') ? 'text-[#2D5F5D] font-semibold' : 'text-[#1D1D1F] hover:text-[#2D5F5D]' }}">
+        Lembaga Desa
+    </a>
+
+    <a href="/wisata"
+        class="flex items-center py-4 text-lg font-medium no-underline border-b border-[#E8E5DE] transition-colors duration-200 {{ request()->is('wisata') ? 'text-[#2D5F5D] font-semibold' : 'text-[#1D1D1F] hover:text-[#2D5F5D]' }}">
+        Wisata
+    </a>
+
+    <a href="/umkm"
+        class="flex items-center py-4 text-lg font-medium no-underline border-b border-[#E8E5DE] transition-colors duration-200 {{ request()->is('umkm') ? 'text-[#2D5F5D] font-semibold' : 'text-[#1D1D1F] hover:text-[#2D5F5D]' }}">
+        UMKM
+    </a>
+
+    <a href="/kegiatan-berita"
+        class="flex items-center py-4 text-lg font-medium no-underline border-b border-[#E8E5DE] transition-colors duration-200 {{ request()->is('ngadirejo-membaca') ? 'text-[#2D5F5D] font-semibold' : 'text-[#1D1D1F] hover:text-[#2D5F5D]' }}">
+        Kegiatan & Berita
+    </a>
+
+    <a href="/about"
+        class="flex items-center py-4 text-lg font-medium no-underline border-b border-[#E8E5DE] transition-colors duration-200 {{ request()->is('about') ? 'text-[#2D5F5D] font-semibold' : 'text-[#1D1D1F] hover:text-[#2D5F5D]' }}">
+        Tentang
+    </a>
+
+    <a href="/lokasi"
+        class="flex items-center py-4 text-lg font-medium no-underline transition-colors duration-200 {{ request()->is('lokasi') ? 'text-[#2D5F5D] font-semibold' : 'text-[#1D1D1F] hover:text-[#2D5F5D]' }}">
+        Lokasi
+    </a>
+
 </div>
 
 {{-- Navbar & Reveal Script --}}

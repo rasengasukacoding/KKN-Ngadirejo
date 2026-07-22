@@ -1,4 +1,4 @@
-{{-- About Section Snippet --}}
+{{-- About Section Snippet (Clean & Professional) --}}
 <section class="py-20 lg:py-24 px-6 bg-[#FBF8F3]" id="about">
     <div class="max-w-[1262px] mx-auto">
 
@@ -8,12 +8,13 @@
                     Tentang Kami
                 </span>
                 <h2 class="font-['Outfit'] text-3xl md:text-[40px] font-semibold leading-tight tracking-tight">
-                    Mengapa Desa Melikan?
+                    Mengapa Desa Ngadirejo?
                 </h2>
             </div>
             <div>
+                {{-- Link ini sudah diperbarui agar lebih profesional --}}
                 <a href="/about" class="inline-flex items-center gap-2 text-sm font-semibold text-[#2D5F5D] hover:underline transition-all duration-200">
-                    Tentang Tim KKN 64 UNS
+                    Profil Lengkap Desa
                     <svg class="w-4 h-4" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5-5-5-5"/></svg>
                 </a>
             </div>
@@ -22,7 +23,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <x-value-card
                 title="Gotong Royong"
-                description="Semangat kebersamaan dan saling membantu yang menjadi fondasi utama kehidupan bermasyarakat di Desa Melikan."
+                description="Semangat kebersamaan dan saling membantu yang menjadi fondasi utama kehidupan bermasyarakat di Desa Ngadirejo."
                 delay="1"
             >
                 <x-slot name="icon">

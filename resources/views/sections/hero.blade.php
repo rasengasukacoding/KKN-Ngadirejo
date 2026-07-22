@@ -3,7 +3,7 @@
 
     {{-- Background Image --}}
     <div class="absolute inset-0 z-[1]">
-        <img src="{{ asset('images/hero-village.png') }}" alt="Desa Melikan"
+        <img src="{{ asset('images/hero-village.png') }}" alt="Desa Ngadirejo"
              id="hero-img"
              class="w-full h-full object-cover opacity-70 scale-105 transition-[transform] duration-[8s] ease-out">
         {{-- Gradient Overlay --}}
@@ -22,12 +22,12 @@
 
         {{-- Title --}}
         <h1 class="hero-animate-2 font-['Outfit'] text-[40px] md:text-[56px] lg:text-[64px] font-bold leading-[1.05] mb-5 tracking-[-0.03em]">
-            Desa Melikan
+            Desa Ngadirejo
         </h1>
 
         {{-- Subtitle --}}
         <p class="hero-animate-3 text-base md:text-[19px] font-normal leading-relaxed text-white/85 max-w-[560px] mx-auto mb-9">
-            Temukan pesona alam, kearifan lokal, dan semangat masyarakat Desa Melikan
+            Temukan pesona alam, kearifan lokal, dan semangat masyarakat Desa Ngadirejo
             yang harmonis dalam setiap langkah menuju kemajuan bersama.
         </p>
 

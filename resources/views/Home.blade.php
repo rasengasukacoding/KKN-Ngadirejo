@@ -1,24 +1,33 @@
-<x-layouts.app>
-
-    {{-- Hero --}}
+<x-layouts.app title="Beranda - Portal Desa">
+    
+    {{-- Memanggil Hero Section di paling atas --}}
     @include('sections.hero')
 
-    {{-- Profil Desa (Snippet) --}}
+    {{-- Memanggil Profil Sekilas --}}
     @include('sections.profil-snippet')
 
-    {{-- Wisata (Snippet with auto-scrolling marquee) --}}
+    {{-- Memanggil Perangkat Desa Sekilas --}}
+    @include('sections.perangkat-snippet')
+
+    {{-- Memanggil Lembaga Desa Sekilas (Putih) -- TAMBAHKAN INI --}}
+    @include('sections.lembaga-snippet')
+
+    {{-- Memanggil Wisata Sekilas --}}
     @include('sections.wisata-snippet')
 
-    {{-- UMKM (Snippet) --}}
+    {{-- Memanggil UMKM Sekilas --}}
     @include('sections.umkm-snippet')
 
-    {{-- Melikan Belajar (Snippet with 3 items) --}}
-    @include('sections.melikan-belajar-snippet')
+    {{-- Memanggil Program Literasi Sekilas (Tersinkronisasi) --}}
+    @include('sections.literasi-snippet')
 
-    {{-- About (Snippet) --}}
+    {{-- Memanggil Kegiatan & Berita Sekilas --}}
+    @include('sections.kegiatan-berita-snippet')
+
+    {{-- Memanggil Tentang Sekilas --}}
     @include('sections.about-snippet')
 
-    {{-- Lokasi (Snippet with no heavy iframe) --}}
+    {{-- Memanggil Lokasi --}}
     @include('sections.lokasi-snippet')
 
 </x-layouts.app>
